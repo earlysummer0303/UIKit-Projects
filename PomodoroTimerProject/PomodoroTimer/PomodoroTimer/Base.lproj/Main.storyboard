@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PomodoroTimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e47-qe-I5M">
+                                <rect key="frame" x="132.5" y="104" width="149" height="64.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="e47-qe-I5M" secondAttribute="height" multiplier="37:16" id="oZg-rN-c5q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="54"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="zMb-sB-hAR">
+                                <rect key="frame" x="78" y="573" width="258" height="233"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60 Mins" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mp2-4S-Oxj">
+                                        <rect key="frame" x="0.0" y="0.0" width="258" height="55"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="46.5"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OXC-dc-Ywu">
+                                        <rect key="frame" x="0.0" y="78" width="258" height="66"/>
+                                        <color key="tintColor" red="0.062745098039215685" green="0.84313725490196079" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="RESET" cornerStyle="dynamic">
+                                            <backgroundConfiguration key="background" cornerRadius="15" strokeWidth="2">
+                                                <color key="strokeColor" red="0.062745098040000002" green="0.84313725490000002" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                            <directionalEdgeInsets key="contentInsets" top="12" leading="42" bottom="12" trailing="42"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="resetButtonTabbed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rQu-2x-ySm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcG-Qj-Tqg">
+                                        <rect key="frame" x="0.0" y="167" width="258" height="66"/>
+                                        <color key="tintColor" red="0.12549019610000001" green="0.13725490200000001" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="START" cornerStyle="dynamic">
+                                            <backgroundConfiguration key="background" cornerRadius="15" strokeWidth="2">
+                                                <color key="backgroundColor" red="0.062745098040000002" green="0.84313725490000002" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="strokeColor" red="0.062745098040000002" green="0.84313725490000002" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                            <directionalEdgeInsets key="contentInsets" top="12" leading="42" bottom="12" trailing="42"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="startButtonTabbed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="beE-FT-Jww"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.12549019607843137" green="0.13725490196078433" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zMb-sB-hAR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="78" id="Br4-f1-bbs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zMb-sB-hAR" secondAttribute="bottom" constant="56" id="E3O-XH-He3"/>
+                            <constraint firstItem="e47-qe-I5M" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="56" id="cys-gd-j7f"/>
+                            <constraint firstItem="e47-qe-I5M" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fQq-6o-a6W"/>
+                            <constraint firstItem="zMb-sB-hAR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nOF-Dp-fL3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="timeCheckLabel" destination="mp2-4S-Oxj" id="e48-1q-u3R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="-27.455357142857142"/>
+        </scene>
+    </scenes>
+</document>
