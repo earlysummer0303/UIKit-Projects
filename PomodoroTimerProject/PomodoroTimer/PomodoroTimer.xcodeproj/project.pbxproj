@@ -16,6 +16,7 @@
 		CD9E73432922318100A4418A /* PomodoroTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9E73422922318100A4418A /* PomodoroTimerTests.swift */; };
 		CD9E734D2922318100A4418A /* PomodoroTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9E734C2922318100A4418A /* PomodoroTimerUITests.swift */; };
 		CD9E734F2922318100A4418A /* PomodoroTimerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9E734E2922318100A4418A /* PomodoroTimerUITestsLaunchTests.swift */; };
+		CDA7F88529437F0F003A040D /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA7F88429437F0F003A040D /* TimerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		CD9E73482922318100A4418A /* PomodoroTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PomodoroTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD9E734C2922318100A4418A /* PomodoroTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimerUITests.swift; sourceTree = "<group>"; };
 		CD9E734E2922318100A4418A /* PomodoroTimerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroTimerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CDA7F88429437F0F003A040D /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				CD9E732B2922317F00A4418A /* AppDelegate.swift */,
 				CD9E732D2922317F00A4418A /* SceneDelegate.swift */,
 				CD9E732F2922317F00A4418A /* ViewController.swift */,
+				CDA7F88429437F0F003A040D /* TimerView.swift */,
 				CD9E73312922317F00A4418A /* Main.storyboard */,
 				CD9E73342922318100A4418A /* Assets.xcassets */,
 				CD9E73362922318100A4418A /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			files = (
 				CD9E73302922317F00A4418A /* ViewController.swift in Sources */,
 				CD9E732C2922317F00A4418A /* AppDelegate.swift in Sources */,
+				CDA7F88529437F0F003A040D /* TimerView.swift in Sources */,
 				CD9E732E2922317F00A4418A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
