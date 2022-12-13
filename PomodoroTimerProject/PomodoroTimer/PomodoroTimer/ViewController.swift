@@ -16,17 +16,21 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.timeCheckLabel.text = "60 Mins"
-        timerView.colors = [UIColor.red.cgColor, UIColor.orange.cgColor, UIColor.yellow.cgColor, UIColor.green.cgColor]
-        timerView.values = [0.25, 0.45, 0.10, 0.20]
-        timerView.pieAnimate(duration: 10.0)
+      
+        timerView.colors = [#colorLiteral(red: 0.1254901961, green: 0.137254902, blue: 0.1725490196, alpha: 1)]
+        timerView.values = [1]
+        timerView.pieAnimate(duration: 6.0) // 초단위
+      
+       
     }
     
     @IBAction func resetButtonTabbed(_ sender: UIButton) {
-        
+        self.viewDidLoad()
         
     }
     
     @IBAction func startButtonTabbed(_ sender: UIButton) {
+    
     }
 }
 
